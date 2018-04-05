@@ -13,10 +13,15 @@ class Activity
     @participants.values.sum
   end
 
-  def split_cost
+  def split_costs
     even_stevens = (total_cost / participants.size)
-    @participants.update(participants) do |person, paid|
-      paid = even_stevens
+    @participants.transform_values! do
+      even_stevens
     end
+  end
+
+  def unsettled_amount(person)
+    even_stevens = (total_cost / participants.size)
+    participants.values_at(person)[0] - even_stevens
   end
 end

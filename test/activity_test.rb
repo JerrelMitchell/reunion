@@ -41,8 +41,16 @@ class ActivityTest < Minitest::Test
     activity = Activity.new('Hiking')
     activity.add_participant('Peter', 20)
     activity.add_participant('Bob', 10)
-    activity.split_cost
+    activity.split_costs
     assert_equal [15, 15], activity.participants.values
+  end
+
+  def test_it_can_evaluate_unsettled_debt_for_participants
+    activity = Activity.new('Hiking')
+    activity.add_participant('Peter', 20)
+    activity.add_participant('Bob', 10)
+    assert_equal 5, activity.unsettled_amount('Peter')
+    assert_equal (-5), activity.unsettled_amount('Bob')
   end
 
 end
