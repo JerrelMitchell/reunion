@@ -2,10 +2,10 @@
 
 ## Preparation
 
-1. Fork this repository.
-1. Clone your new repository to your local machine.
-1. Run `bundle` from the command line.
-1. Run `rake` from the command line.
+1.  Fork this repository.
+1.  Clone your new repository to your local machine.
+1.  Run `bundle` from the command line.
+1.  Run `rake` from the command line.
 
 ## Synthesis
 
@@ -26,11 +26,11 @@ Use tests to drive your development.
 
 Add to the existing Activity class so that it supports the following functionality.
 
-* An Activity has a name, such as 'hiking'  
+* An Activity has a name, such as 'hiking'
 * An Activity has participants
-  * participants are represented with a hash and have a name and an amount they've paid for that activity  
+  * participants are represented with a hash and have a name and an amount they've paid for that activity
 * You can add participants to an Activity
-* You can evaluate the total cost of an activity   
+* You can evaluate the total cost of an activity
 
 ### Iteration 2: Activity Calculations
 
@@ -39,15 +39,14 @@ Add to the Activity class so that it supports the following functionality. Note,
 * You can split the cost of an activity
 * You can evaluate out how much each person is owed/owes
   * If a participant paid less than their fair share they owe a positive amount.
-  * If a participant paid more than their fair share they owe a negative amount (meaning they are owed money).  
-
+  * If a participant paid more than their fair share they owe a negative amount (meaning they are owed money).
 
 ### Iteration 3: Creating Reunions
 
 Add to the existing Reunion class so that it supports the following functionality.
 
 * A Reunion has a location
-* A Reunion has Activities  
+* A Reunion has Activities
 * You can add Activities to a Reunion
 
 ### Iteration 4: Reunion Calculations
@@ -60,7 +59,6 @@ Add to the existing Reunion class so that it supports the following functionalit
   * If a participant paid less than their fair share they owe a positive amount.
   * If a participant paid more than their fair share they owe a negative amount (meaning they are owed money).
 * You can print a summary of total owed amounts per person
-
 
 ### Iteration 5: ERB
 
