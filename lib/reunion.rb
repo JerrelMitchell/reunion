@@ -12,4 +12,8 @@ class Reunion
   def add_activity(activity)
     @activities << activity
   end
+
+  def absolute_cost
+    @activities.map(&:total_cost).sum
+  end
 end
