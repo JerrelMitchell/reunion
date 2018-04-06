@@ -37,14 +37,6 @@ class ActivityTest < Minitest::Test
     assert_equal 30, activity.total_cost
   end
 
-  def test_it_can_split_cost_between_participants
-    activity = Activity.new('Hiking')
-    activity.add_participant('Peter', 20)
-    activity.add_participant('Bob', 10)
-    activity.split_costs
-    assert_equal [15, 15], activity.participants.values
-  end
-
   def test_it_can_evaluate_unsettled_debt_for_participants
     activity = Activity.new('Hiking')
     activity.add_participant('Peter', 20)

@@ -12,9 +12,21 @@
 Included with your pull request, you must submit answers to the following questions:
 
 * What do you think we were trying to get you to learn with this challenge?
+
+  > Reaching through classes and nested objects to manipulate collections of data with enumerables.
+
 * Outline in words (at least 5-6 sentences) what your code is doing in order to solve this problem.
-* What was the most difficult portion of this for you?
-* What came naturally to you?
+
+  > Uses the Activity class to name added activities, while participants with their given cost associated with those activities are paired in a hash. By mapping through participants of an activity, you can find the total cost of an activity by summing the values (given costs) belonging to said participants together. This class also finds if a person was a part of an activity, and if they were, they will have to owe or be owed money by the other participants.
+
+  > The Reunion class names a location of the added activity and holds the activity/ies (aka instances of the activity class) inside of an array. The methods defined in this class can find the total cost of a reunion (aka all activities at a location) and find the total amount(s) owed to/by participants of said reunion(s)
+
+- What was the most difficult portion of this for you?
+
+  > Creating proper tests that showed accurate/intended data types and values.
+
+- What came naturally to you?
+  > Structuring the methods with enumerables and the setting up the tests, and using pry to solve encountered errors.
 
 ## Tasks
 
